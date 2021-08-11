@@ -1,0 +1,107 @@
+body
+{
+
+
+
+}
+
+@font-face
+{
+
+
+
+}
+
+
+h2 p
+{
+
+	word-wrap: break-word;
+}
+
+ul
+{
+	list-style: none;
+}
+
+em
+{
+	color: rgb(0, 88, 253);
+	font-weight: bold;
+}
+
+
+aside
+{
+	width: 350px;
+	margin: auto;
+
+	border: ;
+	text-align: left;
+	padding: ;
+	margin-top: 30px;
+}
+
+
+article
+{
+
+	width: ;
+	margin: auto;
+
+	border: ;
+	text-align: left;
+	padding: px;
+	margin-top: 30px;
+
+}
+
+#conteneur
+{
+	border: 5px solid #rgb(174, 210, 240);
+	border-radius: 20x / 10px;
+
+	display: flex;
+/*	flex-direction: row; */
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+
+.element
+{
+	border: 5px solid #ffffff;
+	border-radius: 20x / 10px;
+	margin: auto;
+}
+
+
+footer
+{
+	background-color: rgb(214, 227, 228);
+	margin-top: 40px;
+	padding: 20px 0 40px 0;
+}
+
+#footerconteneur
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+.footerelement
+{
+	margin: auto;
+}
+
+
+footer h3
+{
+	font-weight: bold;
+
+}
