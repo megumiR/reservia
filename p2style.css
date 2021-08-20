@@ -6,6 +6,12 @@
 }
 
 
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
 h2 p
 {
 
@@ -33,15 +39,14 @@ nav em
 
 
 
-aside
-{
-	width: 350px;
-	margin: auto;
+.round-button:hover{
 
-	border: ;
-	text-align: left;
-	padding: ;
-	margin-top: 30px;
+	color: #888888;
+
+}
+.round-button:active 
+{
+	color: rgb(0, 88, 253);
 }
 
 
@@ -49,7 +54,8 @@ aside
 #conteneur, #conteneurpopulaire
 {
 	border: 5px solid #rgb(174, 210, 240);
-	border-radius: 20x / 10px;
+	border-radius:  30px / 30px;
+	margin: 50px 50px;
 
 	display: flex;
 /*	flex-direction: row; */
@@ -63,10 +69,18 @@ aside
 .element
 {
 	border: 5px solid #ffffff;
-	border-radius: 20x / 10px;
-	margin: auto;
-}
+	border-radius: 40px / 40px;
+	box-shadow: 5px 5px 5px hotpink;
+	margin: 50px 50px;
+	padding: 5px;
+	text-indent: 5px;
 
+}
+	
+article img
+{
+	
+}
 #activite /*need to change*/
 {
 	border: 5px solid #rgb(174, 210, 240);
