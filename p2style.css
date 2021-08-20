@@ -1,10 +1,3 @@
-body
-{
-
-
-
-}
-
 @font-face
 {
 
@@ -19,16 +12,25 @@ h2 p
 	word-wrap: break-word;
 }
 
-ul
+nav ul
 {
 	list-style: none;
 }
 
-em
+nav em
 {
 	color: rgb(0, 88, 253);
 	font-weight: bold;
 }
+
+.checked  /*Star rating*/
+{
+	color: rgb(0, 88, 253);
+}
+
+
+
+
 
 
 aside
@@ -43,20 +45,8 @@ aside
 }
 
 
-article
-{
 
-	width: ;
-	margin: auto;
-
-	border: ;
-	text-align: left;
-	padding: px;
-	margin-top: 30px;
-
-}
-
-#conteneur
+#conteneur, #conteneurpopulaire
 {
 	border: 5px solid #rgb(174, 210, 240);
 	border-radius: 20x / 10px;
@@ -74,6 +64,26 @@ article
 {
 	border: 5px solid #ffffff;
 	border-radius: 20x / 10px;
+	margin: auto;
+}
+
+#activite /*need to change*/
+{
+	border: 5px solid #rgb(174, 210, 240);
+	border-radius: 20x / 10px;
+
+	display: flex;
+/*	flex-direction: row; */
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.activite
+{
+	border: none;
+	border-radius: 20x / 10px;
+	box-shadow: ;
 	margin: auto;
 }
 
