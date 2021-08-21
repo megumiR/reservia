@@ -9,24 +9,26 @@
 body
 {
 	font-family: Raleway, sans-serif;
-  font-size: px;
-
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  word-wrap: break-word;
 }
 a
 {
 	text-decoration: none;
 	color: black;
 }
-
-h2 p
+h1, h2
 {
-
-	word-wrap: break-word;
+	font-weight: bold;
 }
+
 
 nav ul
 {
 	list-style: none;
+												/*put horizantally*/
 }
 
 nav em
@@ -38,6 +40,7 @@ nav em
 .checked  /*Star rating*/
 {
 	color: #0065FC;
+	background-color: white;     ????????
 }
 
 fieldset
@@ -102,23 +105,31 @@ fieldset
 
 #conteneur, #conteneurpopulaire
 {
-	border: 5px solid #rgb(174, 210, 240);
+	border: 1px solid; 
 	border-radius:  30px / 30px;
 	margin: 50px 50px;
 
 	display: flex;
-/*	flex-direction: row; */
+	flex-direction: column; 
+	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
 
 	background-color: #F2F2F2;
 }
 
+article img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 15px 15px 0 0 ;
+}
 .element
 {
+	width: 25%;
+	height: auto;
 	border: 5px solid #ffffff;
-	border-radius: 40px / 40px;
+	border-radius: 15px / 15px;
 	box-shadow: 5px 5px 5px #d9dadb;
 	margin: 50px 50px;
 	padding: 5px;
@@ -127,27 +138,23 @@ fieldset
 	background-color: #ffffff;
 }
 	
-article img
-{
-	
-}
+
+
 #activite /*need to change*/
 {
-	border: 5px solid #rgb(174, 210, 240);
-	border-radius: 20x / 10px;
-
+	border: none;
 	display: flex;
 /*	flex-direction: row; */
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: ;
 }
 
 
 
 footer
 {
-	background-color: rgb(214, 227, 228);
+	background-color: #F2F2F2;
 	margin-top: 40px;
 	padding: 20px 0 40px 0;
 }
@@ -155,20 +162,16 @@ footer
 #footerconteneur
 {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 }
 
 
 .footerelement
 {
+	font-size: 0.6em;
 	margin: auto;
-}
-
-
-footer h3
-{
-	font-weight: bold;
-
+	list-style: ;
 }
