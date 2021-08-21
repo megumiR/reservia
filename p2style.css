@@ -1,13 +1,14 @@
-@font-face
-{
-
-
-
+/*@font-face
+{ 
+	font-family: 'Raleway';
+	src: url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+  		 url('Raleway-VariableFont_wght.ttf') format('truetype'),
 }
 
+*/
 body
 {
-
+	font-family: Raleway, sans-serif;
   font-size: px;
 
 }
@@ -30,26 +31,24 @@ nav ul
 
 nav em
 {
-	color: rgb(0, 88, 253);
+	color: #0065FC;
 	font-weight: bold;
 }
 
 .checked  /*Star rating*/
 {
-	color: rgb(0, 88, 253);
+	color: #0065FC;
 }
 
-td
+fieldset
 {
-	border: 2px solid gray;
-	border-collapse: collapse;
-	border-radius: 20px;
+	border: none;
 }
 
-td i
+#place i
 {
 	color: black;
-	background-color: gray;
+	background-color: #F2F2F2;/*gray*/
 }
 
 
@@ -60,8 +59,8 @@ td i
 
 #button-container i
 {
-	color: rgb(0, 88, 253);
-	background-color: #c3d9e3;
+	color: #0065FC;
+	background-color: #DEEBFF;/*clear bleu*/
 	border: none;
 	border-radius: 50%;
 	padding: 10px;
@@ -71,7 +70,7 @@ td i
 {
   background-color: white; /* 
   font-size: 10px; */
-  color: #c3d9e3;
+  color: #F2F2F2;
   border: 2px solid;
   border-radius: 50px;
   padding: 0 15px 0 0;
@@ -85,15 +84,15 @@ td i
 
 .round-button:hover
 {
-	background-color: rgb(0, 88, 253);
+	background-color: #DEEBFF;
 	color: #888888;
 }
 
 #info i
 {
-	color: rgb(0, 88, 253);
+	color: #0065FC;
 	background-color: white;
-	border: 2px solid #c3d9e3;
+	border: 2px solid #DEEBFF;
 	border-radius: 50%;
 	padding: 10px;
 
@@ -113,18 +112,19 @@ td i
 	justify-content: space-around;
 	align-items: center;
 
-
+	background-color: #F2F2F2;
 }
 
 .element
 {
 	border: 5px solid #ffffff;
 	border-radius: 40px / 40px;
-	box-shadow: 5px 5px 5px hotpink;
+	box-shadow: 5px 5px 5px #d9dadb;
 	margin: 50px 50px;
 	padding: 5px;
 	text-indent: 5px;
 
+	background-color: #ffffff;
 }
 	
 article img

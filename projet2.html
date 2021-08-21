@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="p2style.css" />
-		<link rel="styleshert" media="screen and (max-width: 1280px)" href="p2petit_style.css">  
+		<link rel="styleshert" media="screen and (max-width: 768px)" href="p2petit_style.css">  
+<!--GoogleFont link-->
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
    <!-- Place your kit's code here -->
  	   <script src="https://kit.fontawesome.com/bc4ab73547.js" crossorigin="anonymous"></script>
@@ -18,8 +20,8 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#">Hébergements</a></li>
-				<li><a href="#">Activités</a></li>
+				<li><a href="#conteneur">Hébergements</a></li>
+				<li><a href="#activite">Activités</a></li>
 				<li><a href="#"><em>S'inscrire</em></a></li>
 			</ul>
 		</nav>
@@ -29,13 +31,9 @@
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en plein nature <br />
 				<div><fieldset>
-					<tbody>
-						<tr>
-							<td><label for="search"><i class="fas fa-map-marker-alt"></i></label></td>
-							<td><input type="search" name="search" id="search" placeholder="Marseille, France" /></td>
-							<td><input type="submit" value="Rechercher" /></td>
-						</tr>
-					</tbody>
+						<label for="search"><i class="fas fa-map-marker-alt" id="place"></i></label>
+						<input type="search" name="search" id="search" placeholder="Marseille, France" />
+						<input type="submit" value="Rechercher" />
 
 					<p><div id="button-container">Filtres
 					
