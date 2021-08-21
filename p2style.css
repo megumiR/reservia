@@ -39,6 +39,20 @@ nav em
 	color: rgb(0, 88, 253);
 }
 
+td
+{
+	border: 2px solid gray;
+	border-collapse: collapse;
+	border-radius: 20px;
+}
+
+td i
+{
+	color: black;
+	background-color: gray;
+}
+
+
 #button-container
 {
 	display: inline-flex;
