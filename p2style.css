@@ -9,26 +9,28 @@
 body
 {
 	font-family: Raleway, sans-serif;
-  font-size: 1.2em;
-  color: black;
-  font-weight: bold;
-  word-wrap: break-word;
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+	word-wrap: break-word;
 }
 a
 {
 	text-decoration: none;
 	color: black;
 }
-h1, h2
-{
-	font-weight: bold;
-}
-
 
 nav ul
 {
+	display: flex;
+	flex-flow: row wrap;
+
+	position: absolute;	
+	top: 0;	
+	right: 0;
+
 	list-style: none;
-												/*put horizantally*/
+	text-indent: 8px;
 }
 
 nav em
@@ -40,9 +42,11 @@ nav em
 .checked  /*Star rating*/
 {
 	color: #0065FC;
-	background-color: white;     ????????
 }
-
+.unchecked
+{
+	color: #F2F2F2;
+}
 fieldset
 {
 	border: none;
@@ -100,9 +104,28 @@ fieldset
 	padding: 10px;
 
 }
+article h2, p
+{
+	text-indent: 5px;
+}
 
+.row
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
 
-
+}
+/*
+#conteneur
+{		
+	width: 60%;
+}
+#conteneurpopulaire
+{	
+	width: 30%;
+}
+*/
 #conteneur, #conteneurpopulaire
 {
 	border: 1px solid; 
@@ -110,31 +133,30 @@ fieldset
 	margin: 50px 50px;
 
 	display: flex;
-	flex-direction: row; 
+	flex-flow: row wrap;
 	align-items: flex-start;
-	flex-wrap: wrap;
 	justify-content: space-around;
 
 	background-color: #F2F2F2;
 }
-
 article img
 {
 	width: 100%;
-	height: auto;
+	height: 50%;
 	border-radius: 15px 15px 0 0 ;
 }
 .element
 {
-	width: 25%;
-	height: auto;
+	width: 30%;
+	height: 15%;
 	border: 5px solid #ffffff;
 	border-radius: 15px / 15px;
 	box-shadow: 5px 5px 5px #d9dadb;
 	margin: 50px 50px;
 	padding: 5px;
-	text-indent: 5px;
+	font-size: 0.8em;
 
+	align-content: space-around;
 	background-color: #ffffff;
 }
 	
