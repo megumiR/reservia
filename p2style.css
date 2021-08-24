@@ -20,8 +20,14 @@ a
 	color: black;
 }
 
+header img /*doesn't work with .logo img or .logo*/
+{
+	width: 10%;
+	height: auto;
+}
 nav ul
 {
+
 	display: flex;
 	flex-flow: row wrap;
 
@@ -112,39 +118,39 @@ article h2, p
 .row
 {
 	display: flex;
-	flex-flow: row wrap;
+/*	flex-flow: row wrap;*/
 	justify-content: flex-start;
 
 }
-/*
+.articletitle
+{
+	flex: 1 100%;
+	text-indent: 5%;
+}
+
 #conteneur
 {		
-	width: 60%;
+	flex: 2 0 0; 
+
 }
 #conteneurpopulaire
 {	
-	width: 30%;
+	flex: 0.5 0 0;
 }
-*/
+
 #conteneur, #conteneurpopulaire
 {
-	border: 1px solid; 
-	border-radius:  30px / 30px;
-	margin: 50px 50px;
-
 	display: flex;
 	flex-flow: row wrap;
 	align-items: flex-start;
 	justify-content: space-around;
 
+	border: 1px solid; 
+	border-radius:  30px / 30px;
+	margin: 50px 50px;
 	background-color: #F2F2F2;
 }
-article img
-{
-	width: 100%;
-	height: 50%;
-	border-radius: 15px 15px 0 0 ;
-}
+
 .element
 {
 	width: 30%;
@@ -159,7 +165,12 @@ article img
 	align-content: space-around;
 	background-color: #ffffff;
 }
-	
+article img
+{
+	width: 100%;
+	height: 50%;
+	border-radius: 15px 15px 0 0 ;
+}	
 
 
 #activite /*need to change*/
