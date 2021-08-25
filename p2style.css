@@ -128,7 +128,6 @@ article
 #hebergements
 {		 
 	width: 65em;
-	height: auto;
 }
 #populaires
 {
@@ -153,7 +152,7 @@ article
 	flex: 1 100%;
 	text-indent: 5%;
 }
-.element, .element1, .element2, .element4, .element5, .element3, .element6
+.element
 {
 	width: 30%;
 	height: 15%;
@@ -176,64 +175,49 @@ article img
 
 #activite 
 {
+	width: 100%;
+	height: 500px;
 	border: none;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: flex-start;
 }
-.element2, .element3, .element5, .element6
+.a-title  /*i put the same name .articletitle at 150 but didn't work so changed html*/
 {
-	flex: 1;
-	
+	flex: 1 100%;
+	text-indent: 2%;
 }
-.element1, .element4
+#activite img
 {
-	flex: 2;
-	
-	
-}
-/*
-#activite ----css grid
+	width: 100%;
+	height: 85%;
+	border-radius: 15px 15px 0 0 ;
+}	
+.activite
 {
+	width: 22%;
+/*	height: ;   each element has the height*/
 	border: none;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 30px;
-	grid-auto-rows: minmax(300px, auto);
+	border-radius: 15px / 15px;
+	box-shadow: 5px 5px 5px #d9dadb;
+	margin: 5px 5px;
+	padding: 0;
+	font-size: 0.5em;
+	text-align: start;
+
+	align-content: space-around;
+	background-color: #ffffff;	
 }
-.element1
+.activite2, .activite3, .activite5, .activite6
 {
-	grid-column: 1;
-	grid-row: 1 / 2;
+	height: 200px;	
 }
-.element2
+.activite1, .activite4
 {
-	grid-column: 2;
-	grid-row: 1;
+	height: 450px;
 }
-.element3
-{
-	grid-column: 2;
-	grid-row: 2;
-}
-.element4
-{
-	grid-column: 3;
-	grid-row: 1 / 2;
-}
-.element5
-{
-	grid-column: 4;
-	grid-row: 1;
-}
-.element6
-{
-	grid-column: 4;
-	grid-row: 2;
-}
-*/
 footer
 {
 	background-color: #F2F2F2;
@@ -245,17 +229,13 @@ footer
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
+	justify-content: space-between;
 	
+	align-items: flex-start;
 }
-
-
 .footerelement
 {
 	font-size: 0.8em;
-	
-	
 }
 footer ul
 {
