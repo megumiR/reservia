@@ -124,29 +124,28 @@ article
 */
 }
 
-
-#hebergements
-{		 
-	width: 65em;
-}
-#populaires
-{
-	width: 35em;
-}
-
 #hebergements, #populaires
 {
 	display: flex;
-	flex-flow: row wrap;
 	align-items: flex-start;
 	justify-content: space-around;
 
-	border: 1px solid; 
+	border: none; 
 	border-radius:  30px / 30px;
 	margin: 10px 10px;
 	background-color: #F2F2F2;
 }
-
+#hebergements
+{		 
+	width: 65em;
+	flex-flow: row wrap;
+}
+#populaires
+{
+	width: 35em;
+	flex-direction: column;
+	
+}
 .articletitle
 {
 	flex: 1 100%;
@@ -155,7 +154,7 @@ article
 .element
 {
 	width: 30%;
-	height: 15%;
+	height: 15em;
 	border: 5px solid #ffffff;
 	border-radius: 15px / 15px;
 	box-shadow: 5px 5px 5px #d9dadb;
@@ -172,7 +171,16 @@ article img
 	height: 50%;
 	border-radius: 15px 15px 0 0 ;
 }	
-
+#populaires img
+{
+	border-radius: 15px 0 0 15px;
+	float: left;
+}
+#populaires .element
+{
+	width: 90%;
+	height: 10em;
+}
 #activite 
 {
 	width: 100%;
