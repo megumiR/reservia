@@ -114,27 +114,28 @@ article h2, p
 {
 	text-indent: 5px;
 }
-/*
-.grandconteneur
+
+article
 {
 	display: flex;
-	flex-flow: row wrap;
+	width: 100%;
+/*	flex-flow: row wrap; 
 	justify-content: flex-start;
-
-}*/
-.articletitle
-{
-	flex: 1 100%;
-	text-indent: 5%;
+*/
 }
 
-.conteneur
+
+#hebergements
 {		 
-	max-width: 666px;
+	width: 65%;
 	height: auto;
 }
+#populaires
+{
+	width: 35%;
+}
 
-.conteneur
+#hebergements, #populaires
 {
 	display: flex;
 	flex-flow: row wrap;
@@ -147,7 +148,12 @@ article h2, p
 	background-color: #F2F2F2;
 }
 
-.element
+.articletitle
+{
+	flex: 1 100%;
+	text-indent: 5%;
+}
+.element, .element1, .element2, .element4, .element5, .element3, .element6
 {
 	width: 30%;
 	height: 15%;
@@ -168,21 +174,66 @@ article img
 	border-radius: 15px 15px 0 0 ;
 }	
 
-
-#activite /*need to change*/
+#activite 
 {
 	border: none;
 	display: flex;
-/*	flex-direction: row; */
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: ;
+	align-items: flex-start;
 }
-.element1, .element2, .element4, .element5
+.element2, .element3, .element5, .element6
 {
 	flex: 1;
+	
 }
-
+.element1, .element4
+{
+	flex: 2;
+	
+	
+}
+/*
+#activite ----css grid
+{
+	border: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	grid-auto-rows: minmax(300px, auto);
+}
+.element1
+{
+	grid-column: 1;
+	grid-row: 1 / 2;
+}
+.element2
+{
+	grid-column: 2;
+	grid-row: 1;
+}
+.element3
+{
+	grid-column: 2;
+	grid-row: 2;
+}
+.element4
+{
+	grid-column: 3;
+	grid-row: 1 / 2;
+}
+.element5
+{
+	grid-column: 4;
+	grid-row: 1;
+}
+.element6
+{
+	grid-column: 4;
+	grid-row: 2;
+}
+*/
 footer
 {
 	background-color: #F2F2F2;
