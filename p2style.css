@@ -43,7 +43,7 @@ nav ul
     width: 7rem;
     height: auto;
     padding-top: 10px;
-
+    font-weight: 600;
 }
 .inscrire
 {
@@ -69,18 +69,19 @@ nav ul
 {
 margin-top: 20px;
 margin-bottom: 15px;
+font-weight: 900;
 }
 
 .recherche
 {
 		
     background-color: #F2F2F2;
-    height: 28px;
+    height: 26px;
     border: 1px solid #F2F2F2;
     display: inline-block;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: -6px;
     border-right: 0px;
     border-top-left-radius: 10px;
@@ -132,6 +133,7 @@ input:-ms-input-placeholder
 #button-container
 {
 	display: inline-flex;
+    margin: 15px 0 15px 0;
 }
 
 #button-container i
@@ -180,7 +182,10 @@ input:-ms-input-placeholder
 	background-color: #DEEBFF;
 	color: #888888;
 }
-
+#info
+{
+    font-weight: 900;
+}
 #info i
 {
 	color: #0065FC;
@@ -198,7 +203,8 @@ article h2
 }
 article p
 {
-	text-indent: 5px;
+    text-indent: 5px;
+    font-weight: 900;
 }
 article
 {
@@ -280,8 +286,8 @@ article img
 }
 #populaires .card
 {
-	width: 90%;
-	height: 10em;
+    width: 76%;
+    height: 12em;
 }
 .hebergement-text
 {
@@ -295,7 +301,10 @@ article img
 
 .rating
 {
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 50px;
 }
 
 #activite 
@@ -367,14 +376,16 @@ footer
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 	
 	align-items: flex-start;
 }
 .footerelement
 {
-	font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
+    margin: 30px 100px 20px 90px;
+    line-height: 40px;
 }
 footer ul
 {
