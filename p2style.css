@@ -29,7 +29,7 @@ header img /*doesn't work with .logo img or .logo*/
 	width: 10%;
 	height: auto;
 }
-nav ul
+nav ul     /*#nav*/
 {    display: flex;
     flex-flow: row wrap;
     position: absolute;
@@ -50,7 +50,13 @@ nav ul
 	color: #0065FC;
 	font-family: sans-serif;
 }
-	
+
+.jump-category/*depends on which part you are x :visited*/
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
 
 .checked  /*Star rating*/
 {
@@ -390,4 +396,54 @@ footer
 footer ul
 {
 	list-style: none;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1437px) 
+{
+    #hebergements, #populaires 
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: none;
+        border-radius: 30px / 30px;
+        margin: 20px 12px;
+        background-color: #F2F2F2;
+        padding: 15px;
+    }
+    .card 
+    {
+        width: 43%;
+    }
+    #populaires .card {
+        width: 90%;
+        height: 15em;
+    }
+
+    .rating 
+    {
+        padding-top: 80px;
+    }
+    .spotname 
+    {
+        font-size: 1rem;
+    }
+    
+    .footerelement 
+    {
+    font-size: 1rem;
+    margin: 30px 65px 20px 80px;
+    }
+}
+@media screen /*and (min-width: 768px)*/ and (max-width: 1024px)   /*for tablette*/
+{
+
+
+
+
+
+
+
+    
 }
