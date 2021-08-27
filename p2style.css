@@ -275,6 +275,7 @@ article
     font-size: 0.8em;
     align-content: space-around;
     background-color: #ffffff;
+
 }
 article img
 {
@@ -282,35 +283,37 @@ article img
 	height: 67%;
 	border-radius: 15px 15px 0 0 ;
 }	
-#populaires img
+#populaires img 
 {
-	border-radius: 15px 0 0 15px;
-	float: left;
-	width: 40%;
+    border-radius: 15px 0 0 15px;
     height: 100%;
-	margin-right: 10px;
+    width: 9rem;
 }
 #populaires .card
 {
     width: 76%;
     height: 12em;
+
+    display: flex;
+
 }
 .hebergement-text
 {
     line-height: 2em;
 }
-.popular-text
+.popular-text 
 {
-    height: 100%;
     line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 55%;
+    padding-left: 10px;
 }
 
 .rating
 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-top: 50px;
+    margin-top: auto;
 }
 
 #activite 
@@ -325,24 +328,6 @@ article img
     align-items: flex-start;
     margin-left: 20px;
 }
-.a-title  /*i put the same name .articletitle at 150 but didn't work so changed html*/
-{
-	flex: 1 100%;
-    text-indent: 2%;
-	margin-top: 40px;
-	font-weight: 900;
-}
-.spotname
-{
-	text-indent: 5%;
-    /*wanna put a center position vertically*/
-}
-#activite img
-{
-	width: 100%;
-	height: 80%;
-	border-radius: 15px 15px 0 0 ;
-}	
 
 .activite
 {
@@ -358,6 +343,8 @@ article img
 
 	align-content: space-around;
 	background-color: #ffffff;	
+ /*   display: flex;
+    flex-direction: column;      didn't work for the sentence*/
 }
 .activite3, .activite5
 {
@@ -371,6 +358,29 @@ article img
 {
 	height: 450px;
 }
+.a-title  /*i put the same name .articletitle at 150 but didn't work so changed html*/
+{
+	flex: 1 100%;
+    text-indent: 2%;
+	margin-top: 40px;
+	font-weight: 900;
+}
+.spotname
+{
+    text-indent: 5%;
+/*    margin-top: auto;*/
+}
+
+.activite-photo, .activite-photo-big
+{
+	width: 100%;
+	height: 80%;
+	border-radius: 15px 15px 0 0 ;
+}	
+.activite-photo-big
+{
+	height: 90%;
+}	
 footer
 {
 	background-color: #F2F2F2;
@@ -435,15 +445,4 @@ footer ul
     font-size: 1rem;
     margin: 30px 65px 20px 80px;
     }
-}
-@media screen /*and (min-width: 768px)*/ and (max-width: 1024px)   /*for tablette*/
-{
-
-
-
-
-
-
-
-    
 }
