@@ -58,14 +58,7 @@ nav ul     /*#nav*/
 }
 
 
-.checked  /*Star rating*/
-{
-	color: #0065FC;
-}
-.unchecked
-{
-	color: #F2F2F2;
-}
+
 #intro
 {
 	margin-left: 15px;
@@ -93,6 +86,12 @@ font-weight: 900;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+#place i
+{
+	color: black;
+	background-color: #F2F2F2;/*gray*/
+}
+
 .search-field
 {
 	height: 40px;
@@ -127,13 +126,6 @@ input:-ms-input-placeholder
 	color: #000;
 }
 
-
-
-#place i
-{
-	color: black;
-	background-color: #F2F2F2;/*gray*/
-}
 
 
 #button-container
@@ -315,7 +307,14 @@ article img
 {
     margin-top: auto;
 }
-
+.checked  /*Star rating*/
+{
+	color: #0065FC;
+}
+.unchecked
+{
+	color: #F2F2F2;
+}
 #activite 
 {
 	width: 100%;
