@@ -18,11 +18,11 @@ a
 }
 /*-----END -----*/
 
-header img 
-{
+header img {
     width: 25%;
-    margin: 40px 0 40px 45px;
+    margin: 40px 0 100px 50px;
 }
+
 nav ul   /*only "nav" dosen't work for flex */
 {
     display: flex;
@@ -42,8 +42,9 @@ nav ul   /*only "nav" dosen't work for flex */
 .jump-category {
     width: 100%;
     margin-bottom: 5rem;
+    padding-bottom: 2rem;
     font-weight: 900;
-
+	border-bottom: 5px solid #F2F2F2;
 }
 /*---the same code FROM HERE------*/
 .jump-category:visited????
@@ -56,14 +57,16 @@ nav ul   /*only "nav" dosen't work for flex */
 #intro {
     margin-left: 4rem;
     margin-bottom: 4rem;
-    line-height: 4rem;
+    line-height: 5rem;
 }
 .introduction {
 
-    margin-bottom: 15px;
     font-weight: 900;
 }
-
+section h1 {
+    font-size: 3rem;
+    width: 50rem;
+}
 .recherche
 {	
     background-color: #F2F2F2;
@@ -75,6 +78,7 @@ nav ul   /*only "nav" dosen't work for flex */
     padding-left: 15px;
     padding-right: 15px;
     margin-right: -6px;
+    margin-top: 6rem;
     border-right: 0px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -89,7 +93,7 @@ nav ul   /*only "nav" dosen't work for flex */
 
 .search-field {
     height: 8rem;
-    width: 600px;
+    width: 640px;
     border: 2px solid #F2F2F2;
     border-right: 0px;
     border-left: 0px;
@@ -107,54 +111,49 @@ nav ul   /*only "nav" dosen't work for flex */
     font-size: 3rem;
     border: 1px solid #F2F2F2;
 }
+/*    i class="fas fa-search"  */
 
 
 
-#button-container
-{
-	display: inline-flex;
-    margin: 15px 0 15px 0;
+#button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 80px 0 15px 0;
 }
 
-#button-container i
-{
-	color: #0065FC;
-	background-color: #DEEBFF;/*clear bleu*/
-	border: none;
-	border-radius: 50%;
-	padding: 10px;
-	font-size: 1.2em;
+#button-container i {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: none;
+    border-radius: 50%;
+    padding: 35px;
+    font-size: 3rem;
+    margin-left: -20px;
 }
-.filter
-{
-    padding: 8px 10px 0px 10px;
-    display: inline-block;
-    margin: 10px;
-    font-size: 1.2rem;
+.filter {
+    font-size: 2.5rem;
     color: #000;
     font-weight: 900;
+    flex: 1 100%;
 }
 
-.round-button
-{
-  background-color: white; /* 
-  font-size: 10px; */
-  color: #F2F2F2;
-  border: 2px solid;
-  border-radius: 50px;
-  padding: 0 15px 0 0;
-  text-align: center;
-  display: inline-block;
-  margin: 10px;
-
-  transition-duration: 0.4s;
+.round-button {
+    color: #F2F2F2;
+    border: 4px solid;
+    border-radius: 90px;
+    padding: 0px 70px 0 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 30px 30px 0px;
+    transition-duration: 0.4s;
 }
-.round-button .text
-{
+.round-button .text {
     color: #000;
-    font-weight: 600;
+    font-weight: 900;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    padding-left: 20px;
 }
 
 .round-button:hover
@@ -162,16 +161,128 @@ nav ul   /*only "nav" dosen't work for flex */
 	background-color: #DEEBFF;
 	color: #888888;
 }
-#info
+#info{
+    display: flex;
+  
+    justify-content: flex-start;
+}
+
+#info i {
+    color: #0065FC;
+    background-color: white;
+    border: 2px solid #DEEBFF;
+    border-radius: 72%;
+    padding: 14px 25px 17px 25px;
+    font-size: 2rem;
+    margin-bottom: auto;
+}
+#info .text {
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-left: 30px;
+    margin-right: 2rem;
+    line-height: 50px;
+}
+/*hebergement  popular*/
+
+article h2
 {
+    font-size: 3rem;
     font-weight: 900;
 }
-#info i
+article p
 {
-	color: #0065FC;
-	background-color: white;
-	border: 2px solid #DEEBFF;
-	border-radius: 50%;
-	padding: 10px;
+    font-weight: 900;
+    font-size: 2rem;  
+}
+article
+{
 
+}
+
+#hebergements, #populaires
+{
+
+}
+#hebergements
+{		 
+  
+
+}
+#populaires
+{
+
+	
+	
+}
+.corner-hebergement
+{
+    padding-bottom: 1rem;
+    text-indent: 3rem;
+}
+.more-info
+{
+
+}
+.corner-popular
+{
+	
+}
+.card
+{
+    width: 90%;
+    height: 35em;
+    border: 5px solid #ffffff;
+    border-radius: 30px / 30px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    margin: 30px 0px 50px 30px;
+    padding: 10px;
+    font-size: 1rem;
+    align-content: space-around;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+article img
+{
+    width: 100%;
+    height: 65%;
+    border: none;
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 20px;
+}	
+#populaires img 
+{
+
+}
+#populaires .card
+{
+  
+
+}
+.hebergement-text
+{
+ text-indent: 2rem;
+ line-height: 4rem;
+}
+.popular-text 
+{
+  
+}
+/*
+.rating
+{
+    margin-top: auto;
+}*/
+.checked  /*Star rating*/
+{
+    color: #0065FC;
+    font-size: 2rem;
+    letter-spacing: -25px;
+}
+.unchecked
+{
+	color: #F2F2F2;
+    font-size: 2rem;
+    letter-spacing: -25px;
 }
