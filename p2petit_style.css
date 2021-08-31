@@ -37,20 +37,29 @@ nav ul   /*only "nav" dosen't work for flex */
     top: 5.5rem;
     right: 3.5rem;
     color: #0065FC;
-    font-family: sans-serif;
+    font-weight: 900;
 }
 .jump-category {
     width: 108%;
     margin-bottom: 5rem;
     padding-bottom: 2rem;
-    font-weight: 900;
+    font-weight: 900; 
     color: #000;
-	border-bottom: 5px solid #F2F2F2;
+
 }
 /*---the same code FROM HERE------*/
-.bleubar
+.topbar
+{
+    border-bottom: 5px solid #f2f2f2;
+
+}
+.topbar:hover
 {   
 	border-bottom: 5px solid #0065FC;
+    cursor: pointer;
+}
+.topbar:hover > a
+{   
     color: #0065FC;
 }
 /*-----END -----*/
@@ -244,11 +253,18 @@ article
 }
 .corner-popular
 {
-    text-indent: -4rem;
+    text-indent: -6rem;
     margin-top: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
-    font-size: 3.5rem;	
+    font-size: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#chart
+{
+    padding-left: 95px;
 }
 .card
 {

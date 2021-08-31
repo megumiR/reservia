@@ -21,13 +21,13 @@ body
 a
 {
 	text-decoration: none;
-	color: #000;
 }
 
 header img /*doesn't work with .logo img or .logo*/
 {
-	width: 10%;
-	height: auto;
+    width: 130px;
+    height: auto;
+    margin: 20px 0px 20px 15px;
 }
 nav ul     /*#nav*/
 {    display: flex;
@@ -37,27 +37,38 @@ nav ul     /*#nav*/
     right: 0;
     list-style: none;
     text-align: center;
+    border-top: 2px solid #fff;
+    
 }
 .jump-category ,.inscrire
 {
     width: 7rem;
     height: auto;
-    padding-top: 10px;
-    font-weight: 600;
+    padding-top: 45px;
+
+    color: #000;
+    font-size: 1rem;
 }
 .inscrire
 {
 	color: #0065FC;
-	font-family: sans-serif;
+    font-weight: 900;
 }
 
-.jump-category/*depends on which part you are x :visited*/
+.topbar/*depends on which part you are x jump-category:visited*/
+{
+    border-top: 2px solid #ffffff;
+
+}
+.topbar:hover/*depends on which part you are x jump-category:visited*/
 {
     border-top: 2px solid #0065FC;
+    cursor: pointer;
+}
+.topbar:hover > a
+{
     color: #0065FC;
 }
-
-
 
 #intro
 {
@@ -183,7 +194,11 @@ input:-ms-input-placeholder
 	background-color: #DEEBFF;
 	color: #888888;
 }
-
+#info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 #info i
 {
 	color: #0065FC;
@@ -196,6 +211,7 @@ input:-ms-input-placeholder
 #info .text
 {
     font-weight: 900;
+    padding-left: 10px;
 }
 article h2
 {
@@ -256,9 +272,14 @@ article
 }
 .corner-popular
 {
-	display: inline;
-	font-size: 1.5rem;
+    display: inline-flex;
+    font-size: 1.5rem;
 }
+#chart
+{
+    padding-left: 145px;
+}
+
 .card
 {
 	width: 28%;
@@ -272,6 +293,12 @@ article
     align-content: space-around;
     background-color: #ffffff;
 
+}
+.card:hover
+{
+    border: 1px solid #F2F2F2;
+    box-shadow: 5px 5px 5px #fcf087;
+    cursor: pointer;
 }
 article img
 {
@@ -361,6 +388,13 @@ article img
 {
 	height: 450px;
 }
+
+.activite:hover
+{
+    border: 1px solid #F2F2F2;
+    box-shadow: 5px 5px 5px #fcf087;
+    cursor: pointer;
+}
 .a-title  /*i put the same name .articletitle at 150 but didn't work so changed html*/
 {
 	flex: 1 100%;
@@ -389,6 +423,7 @@ footer
 	background-color: #F2F2F2;
 	margin-top: 40px;
 	padding: 20px 0 40px 0;
+   
 }
 
 #footerconteneur
@@ -405,6 +440,7 @@ footer
     font-weight: 900;
     margin: 30px 100px 20px 90px;
     line-height: 40px;
+    color: #000;
 }
 footer ul
 {
