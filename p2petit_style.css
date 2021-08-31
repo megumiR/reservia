@@ -9,12 +9,11 @@ body
 	font-family: Raleway, sans-serif;
 	font-size: 14px;
 	color: black;
-
 }
 a
 {
 	text-decoration: none;
-	color: #000;
+	/*color: #000;*/
 }
 /*-----END -----*/
 
@@ -29,6 +28,7 @@ nav ul   /*only "nav" dosen't work for flex */
     text-align: center;
     list-style: none;
     font-size: 2.5rem;
+    width: 114%;
 }
 
 .inscrire 
@@ -40,16 +40,17 @@ nav ul   /*only "nav" dosen't work for flex */
     font-family: sans-serif;
 }
 .jump-category {
-    width: 100%;
+    width: 108%;
     margin-bottom: 5rem;
     padding-bottom: 2rem;
     font-weight: 900;
+    color: #000;
 	border-bottom: 5px solid #F2F2F2;
 }
 /*---the same code FROM HERE------*/
-.jump-category:visited????
+.bleubar
 {   
-	border-bottom: 2px solid #0065FC;
+	border-bottom: 5px solid #0065FC;
     color: #0065FC;
 }
 /*-----END -----*/
@@ -60,11 +61,13 @@ nav ul   /*only "nav" dosen't work for flex */
     line-height: 5rem;
 }
 .introduction {
-
     font-weight: 900;
+} 
+.introP{
+    font-size: 1.1rem;
 }
 section h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     width: 50rem;
 }
 .recherche
@@ -110,6 +113,14 @@ section h1 {
     color: #fff;
     font-size: 3rem;
     border: 1px solid #F2F2F2;
+}
+input::placeholder
+{
+	color: #000;
+}
+.pc
+{
+    display: none;
 }
 /*    i class="fas fa-search"  */
 
@@ -199,7 +210,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    width: 108%;
+    width: 114%;/*108%???*/
 }
 #hebergements
 {		 
@@ -219,16 +230,17 @@ article
     align-items: center;
     
 }	
-	
-}
 .corner-hebergement
 {
-    padding-bottom: 1rem;
-/*    text-indent: 3rem;*/
+    text-indent: 3rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 3.5rem;
 }
 .more-info
 {
     text-indent: 3rem;
+    font-size: 3rem;
 }
 .corner-popular
 {
@@ -236,7 +248,7 @@ article
     margin-top: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
-    font-size: 4rem;	
+    font-size: 3.5rem;	
 }
 .card
 {
@@ -245,7 +257,7 @@ article
     border: 5px solid #ffffff;
     border-radius: 50px / 50px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
-    margin: 30px 0px 50px 30px;
+    margin: 30px 30px 50px 30px;
     padding: 10px;
     font-size: 1rem;
     align-content: space-around;
@@ -290,6 +302,7 @@ article img
 .rating
 {
     margin-top: auto;
+    letter-spacing: 2rem;
 }
 .checked  /*Star rating*/
 {
@@ -314,14 +327,14 @@ article img
 
 #activite
 {
-    padding: 30px 30px 70px 30px;
+    padding: 30px 50px 70px 50px;
 }
 
 
 .activite
 {
     border-radius: 50px 50px 50px 50px;
-    height: 30rem;
+    height: 33rem;
     margin-bottom: 70px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
 }
@@ -333,7 +346,7 @@ article img
 }
 .activite-photo, .activite-photo-big
 {
-    height: 22rem;
+    height: 25rem;
 }
 
 
@@ -348,6 +361,7 @@ article img
 }
 .footerelement{
     margin-bottom: 70px;
+    color: #000;
 }
 footer ul
 {

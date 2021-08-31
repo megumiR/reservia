@@ -125,7 +125,10 @@ input:-ms-input-placeholder
 {
 	color: #000;
 }
-
+.smartphone
+{
+    display: none;
+}
 
 
 #button-container
